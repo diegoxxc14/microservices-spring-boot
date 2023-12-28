@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MicroserviceConfigApplication",
+            "request": "launch",
+            "mainClass": "com.microservice.config.MicroserviceConfigApplication",
+            "projectName": "microservice-config"
+        },
+        {
+            "type": "java",
+            "name": "MicroserviceEurekaApplication",
+            "request": "launch",
+            "mainClass": "com.microservice.eureka.microserviceeureka.MicroserviceEurekaApplication",
+            "projectName": "microservice-eureka"
+        },
+        {
+            "type": "java",
+            "name": "MicroserviceGatewayApplication",
+            "request": "launch",
+            "mainClass": "com.microservice.gateway.MicroserviceGatewayApplication",
+            "projectName": "microservice-gateway"
+        },
+        {
+            "type": "java",
+            "name": "MicroserviceStudentApplication",
+            "request": "launch",
+            "mainClass": "com.microservice.student.MicroserviceStudentApplication",
+            "projectName": "microservice-student"
+        }
+    ]
+}

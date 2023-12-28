@@ -13,7 +13,7 @@ eureka:
   instance:
     hostname: localhost
   
-  # Para que no se registre Eureka
+  # Para que no se registre en Eureka
   client:
     register-with-eureka: false
     fetch-registry: false
