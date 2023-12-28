@@ -8,15 +8,20 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.1.7</version>
+        <version>3.2.1</version>
     </parent>
 
-    <groupId>com.demo</groupId>
-    <artifactId>microservices</artifactId>
+    <groupId>com.mycompany.demo</groupId>
+    <artifactId>SpringMicroservices</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!-- Indicamos que es un contenedor de proyectos (Proyecto padre)-->
     <packaging>pom</packaging>
+
+    <!-- Detallamos lo módulos (Microservicios)-->
+    <modules>
+        <module>microservice-gateway</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -38,7 +43,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>3.1.7</version>
+                    <version>3.2.1</version>
                 </plugin>
             </plugins>
         </pluginManagement>
