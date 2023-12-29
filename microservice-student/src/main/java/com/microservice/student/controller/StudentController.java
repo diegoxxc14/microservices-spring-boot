@@ -36,4 +36,10 @@ public class StudentController {
     public ResponseEntity<?> findById(@PathVariable Long id) {
         return ResponseEntity.ok(studentSer.findById(id));
     }
+
+    // Habilitar un endpoint para ser consumido por un microservicio
+    @GetMapping("/search-by-couser/{idCourse}")
+    public ResponseEntity<?> findByIdCourse(@PathVariable Long idCourse) {
+        return ResponseEntity.ok(studentSer.findByIdCourse(idCourse));
+    }
 }

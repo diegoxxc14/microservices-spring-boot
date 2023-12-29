@@ -37,6 +37,11 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		<!-- Cliente HTTP para comunicar entre microservicios -->
+		<dependency>
+      		<groupId>org.springframework.cloud</groupId>
+      		<artifactId>spring-cloud-starter-openfeign</artifactId>
+    	</dependency>
 
 		<dependency>
 			<groupId>org.postgresql</groupId>
