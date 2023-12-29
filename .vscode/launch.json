@@ -37,6 +37,13 @@
             "request": "launch",
             "mainClass": "com.microservice.student.MicroserviceStudentApplication",
             "projectName": "microservice-student"
-        }
+        },
+        {
+            "type": "java",
+            "name": "MicroserviceCourseApplication",
+            "request": "launch",
+            "mainClass": "com.microservice.course.MicroserviceCourseApplication",
+            "projectName": "microservice-course"
+        },
     ]
 }
