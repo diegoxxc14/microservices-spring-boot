@@ -3,6 +3,7 @@ package com.microservice.course.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.microservice.course.client.StudentClient;
 import com.microservice.course.dto.StudentDto;
@@ -10,6 +11,7 @@ import com.microservice.course.entity.Course;
 import com.microservice.course.http.response.StudentByCourseResponse;
 import com.microservice.course.persistence.ICourseRepository;
 
+@Service
 public class CourseServiceImp implements ICourseService {
 
     @Autowired
