@@ -13,6 +13,6 @@ import com.microservice.course.dto.StudentDto;
 public interface StudentClient {
     
     // Endoint del microservicio a consultar
-    @GetMapping("/search-by-couser/{idCourse}")
+    @GetMapping("/search-by-course/{idCourse}")
     List<StudentDto> findAllStudentByCourse(@PathVariable Long idCourse);
 }
