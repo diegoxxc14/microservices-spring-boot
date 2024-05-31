@@ -17,11 +17,11 @@ spring:
       routes:
         - id: students
           uri: http://localhost:8090
+          # Accede a cualquier recurso del msvc-student
           predicates:
-            # Accede a cualquier recurso del msvc-student
             - Path=/api/student/**
         - id: courses
           uri: http://localhost:9090
+          # Accede a cualquier recurso del msvc-course
           predicates:
-            # Accede a cualquier recurso del msvc-course
             - Path=/api/course/**
