@@ -1,27 +1,6 @@
-server:
-  port: 8080
-
 spring:
+  application:
+    name: msvc-gateway
   # Configurar el Config Server
   config:
     import: optional:configserver:http://localhost:8888
-  application:
-    name: msvc-gateway
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          # Gateway activo, el que va a redireccionar a los msvc
-          enabled: true
-      # Configurar las rutas de los msvc    
-      routes:
-        - id: students
-          uri: http://localhost:8090
-          # Accede a cualquier recurso del msvc-student
-          predicates:
-            - Path=/api/student/**
-        - id: courses
-          uri: http://localhost:9090
-          # Accede a cualquier recurso del msvc-course
-          predicates:
-            - Path=/api/course/**
